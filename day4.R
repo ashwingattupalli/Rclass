@@ -1,3 +1,17 @@
 summary(mtcars)
 str(mtcars)
-summary(iris,tail=FALSE)
+aggregate(Sepal.Length~Species,iris,mean)
+ subset(iris,Sepal.Length>7)
+ mtcars
+ quantile(mtcars$hp,probs=seq(0,1,0.5),na.rm=FALSE)
+data1 = seq(1:10)
+cumsum(data1)
+cummin(data1)
+cummax(data1)
+cumprod(data1)
+d1=data.frame(c1=c(1,2,3),c2=c(2,3,4))
+sum(d1)
+max(d1)
+fivenum(d1$c1)
+?fivenum
+apply(d1,MARGIN = 1,mean)
